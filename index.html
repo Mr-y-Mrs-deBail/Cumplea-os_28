@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Felices 28 amor❤️</title>
+</head>
+<body>
+
+    <img class="adornos" src="img/adornos.png" alt="">
+    
+    <div class="container_Cumpleaños">
+        <div class="letra letra1" onclick="playRandomSound()" onmouseover="playRandomSound()">H</div>
+        <div class="letra letra1" onclick="playRandomSound()" onmouseover="playRandomSound()">A</div>
+        <div class="letra letra1" onclick="playRandomSound()" onmouseover="playRandomSound()">P</div>
+        <div class="letra letra1" onclick="playRandomSound()" onmouseover="playRandomSound()">P</div>
+        <div class="letra letra1" onclick="playRandomSound()" onmouseover="playRandomSound()">Y</div>
+    </div>
+
+    <div class="container_Cumpleaños">
+        <div class="letra letra2" onclick="playRandomSound()" onmouseover="playRandomSound()">B</div>
+        <div class="letra letra2" onclick="playRandomSound()" onmouseover="playRandomSound()">I</div>
+        <div class="letra letra2" onclick="playRandomSound()" onmouseover="playRandomSound()">R</div>
+        <div class="letra letra2" onclick="playRandomSound()" onmouseover="playRandomSound()">T</div>
+        <div class="letra letra2" onclick="playRandomSound()" onmouseover="playRandomSound()">H</div>
+    </div>
+    
+    <div class="container_Cumpleaños">
+        <div class="letra letra3" onclick="playRandomSound()" onmouseover="playRandomSound()">D</div>
+        <div class="letra letra3" onclick="playRandomSound()" onmouseover="playRandomSound()">A</div>
+        <div class="letra letra3" onclick="playRandomSound()" onmouseover="playRandomSound()">Y</div>
+    </div>
+
+    <audio id="popSound1" src="audio/1.mp3" preload="auto"></audio>
+    <audio id="popSound2" src="audio/2.mp3" preload="auto"></audio>
+    <audio id="popSound3" src="audio/3.mp3" preload="auto"></audio>
+    <audio id="popSound4" src="audio/4.mp3" preload="auto"></audio>
+
+    <div class="container_cake" >
+        <div id="birthday-cake">
+            <div class="cake">
+                <div class="middle"></div>
+                <div class="chocs"></div>
+                <div class="top"></div>
+            </div>
+            
+            <div class="candles">
+                <div class="flame"></div>
+                <div class="flame2"></div>
+                <div class="flame3"></div>
+                <div class="flame4"></div>
+                <div class="flame5"></div>
+                <div class="flame6"></div>
+                <div class="shadows"></div>
+                <img id="encendedor" src="img/fire.gif" style="display: none;">
+                <div class="text">¡Felices 28 mi Todo!</div>
+            </div>
+            <p class="text2">Pide un lindo <button class="star-btn"></button> con todo tu corazón y luego sopla las velas mi amor, y verás cómo se convierte en realidad.</p>
+        </div>
+    </div>
+    <br><br><br><br>
+
+    <img class="clickimg" src="img/click.png" alt="">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+    
+        var audioElement = document.createElement('audio');
+        audioElement.setAttribute('src', 'audio/music.mp3');
+        
+        Swal.fire({
+            title: 'Reproduce antes de continuar mi amor!',
+            color: 'white',
+            imageUrl: 'img/dance-party.gif',
+            imageWidth: 250,
+            imageAlt: 'dance',
+            html: `
+            <audio controls>
+              <source src="audio/music.mp3" type="audio/mpeg">
+              Tu navegador no soporta el elemento de audio.
+            </audio>
+            <p class="html02">La música seguirá incluso al presionar continuar, <br>así que continúa viendo tu linda sorpresa mi amor. <br>Te amoOOOOOOOoooooo❤️. <br>Espero te súper encante!🎉.</p>`,
+            confirmButtonText: 'Continuar',
+            background: "cadetblue",
+            grow: 'fullscreen',
+            confirmButtonColor: 'white',
+            allowOutsideClick: false,
+            allEscapeKey: false,
+            allEnterKey: false,
+            stopKeydownPropagation: false,
+            customClass:{
+                confirmButton: 'boton-alerta1',
+                popup: 'alerta-redondeada'
+            }
+        }).then(() => {
+            
+        audioElement.play();
+        Swal.fire({html: '<p class="html02"> Mi súper esposo <br> ¡A ver, a ver! ¿Quién está de cumpleaños hoy? <br> ¿Quién será él que cumple añitos hoy? <br> ¿Quién será esa personita súper linda? <br> ¿Quién? <br> ¡Vamos amor, dime quién buuuu! <br> ¡Uyyyyyyy!🎉⭐. <p>',
+        imageUrl: 'img/pochacco.png',
+        imageWidth: 250,
+        imageAlt: 'pochacco',
+        background: "cadetblue",
+        grow: 'fullscreen',
+        confirmButtonText: 'Continuar',
+        confirmButtonColor: 'white',
+        allowOutsideClick: false,
+        allEscapeKey: false,
+        allEnterKey: false,
+        stopKeydownPropagation: false,
+        customClass:{
+            confirmButton: 'boton-alerta1',
+            popup: 'alerta-redondeada'
+        }
+    
+            }).then(() => {
+                Swal.fire({
+                html: '<p class="html02"> ¿Quién cumple añitos hoy amor? <p>',
+                background: "cadetblue",
+                grow: 'fullscreen',
+                input: 'radio',
+                inputOptions: {
+                    'yo': 'Yo',
+                    'no_se': 'No sé'
+                },
+                confirmButtonColor: 'white',
+                allowOutsideClick: false,
+                allEscapeKey: false,
+                allEnterKey: false,
+                stopKeydownPropagation: false,
+                color: 'gray',
+                imageUrl: 'img/pooh-bear.gif',
+                imageWidth: 250,
+                imageAlt: 'bear',
+                customClass: {
+                    confirmButton: 'boton-alerta1',
+                    popup: 'alerta-redondeada'
+                },
+                
+                inputValidator: (value) => {
+                    if (value === 'yo') {
+                        return;
+                    } else {
+                        return 'Buuu, sí lo sabes mi amor, vuelve a intentarlo😊';
+                    }
+                },
+                confirmButtonText: 'Continuar'
+            
+                }).then((result) => {
+                    
+                    if (result.isConfirmed) {
+                    Swal.fire({
+                        html: '<p class="html02"> 🎂Pues si eres tú mi amor, él que cumple añitos hoy Uyyyyy, yo sé que las palabras no pueden sustituir un abrazo, <br> pero sirven para hacerte llegar mis mejores deseos para tu cumpleaños🎉. <br> Te envío un abrazo súper fuerte mi Todo✨. <p>',
+                            imageUrl: 'img/abrazo.png',
+                            imageWidth: 250,
+                            imageAlt: 'abrazo',
+                            background: "cadetblue",
+                            confirmButtonText: 'Continuar',
+                            confirmButtonColor: 'white',
+                            allowOutsideClick: false,
+                            allEscapeKey: false,
+                            allEnterKey: false,
+                            stopKeydownPropagation: false,
+                            customClass: {
+                                confirmButton: 'boton-alerta1',
+                                popup: 'alerta-redondeada'
+                            }
+                        }).then(() => {
+                            Swal.fire({
+                                html: '<p class="html02">  ¿Uyyy 🥳Listo para ver todas tus lindas sorpresas que he preparado para ti🎊, mi amor? ... <p>',
+                                imageUrl: 'img/pooh.png',
+                                imageWidth: 250,
+                                imageAlt: 'pooh',
+                                background: "cadetblue",                                   
+                                confirmButtonText: 'Sí❤️',
+                                confirmButtonColor: 'white',
+                                allowOutsideClick: false,
+                                allEscapeKey: false,
+                                allEnterKey: false,
+                                stopKeydownPropagation: false,
+                                customClass: {
+                                confirmButton: 'boton-alerta1',
+                                popup: 'alerta-redondeada'
+                            }
+
+                        
+                        });
+                    
+                    });
+                
+                } 
+            });
+        });
+      });
+    </script>
+
+    <script>
+        var sounds = [
+            document.getElementById('popSound1'),
+            document.getElementById('popSound2'),
+            document.getElementById('popSound3'),
+            document.getElementById('popSound4')
+        ];
+        
+        function playRandomSound() {
+            var sound = sounds[Math.floor(Math.random() * sounds.length)];
+            sound.play();
+        }
+        </script>
+
+        <script>
+            $(document).ready(function() {
+                var estado = 0;
+                $(".candles").click(function() {
+                    if (estado === 0) {
+                        
+                        // Apaga las velas y muestra el texto
+                    $(".flame").animate({"opacity":0}, "fast");
+                    $(".flame2").animate({"opacity":0}, "fast");
+                    $(".flame3").animate({"opacity":0}, "fast");
+                    $(".flame4").animate({"opacity":0}, "fast");
+                    $(".flame5").animate({"opacity":0}, "fast");
+                    $(".flame6").animate({"opacity":0}, "fast");
+                    $(".text").animate({"opacity":1, "top":-90}, "fast");
+                    estado = 1;
+                } else if (estado === 1) {
+                    
+                    // Oculta el texto, muestra el encendedor y "enciende" las velas
+                    $(".text").animate({"opacity":0}, "fast");
+                    $("#encendedor").show();
+                    $(".flame").animate({"opacity":1}, "fast");
+                    $(".flame2").animate({"opacity":1}, "fast");
+                    $(".flame3").animate({"opacity":1}, "fast");
+                    $(".flame4").animate({"opacity":1}, "fast");
+                    $(".flame5").animate({"opacity":1}, "fast");
+                    $(".flame6").animate({"opacity":1}, "fast");
+                    estado = 2;
+
+                     // Oculta el encendedor después de un minuto
+                     
+                     setTimeout(function() {
+                        $("#encendedor").hide();
+                    }, 2800); // tiempo
+                } else {
+                    
+                    // Apaga las velas y muestra el texto
+                    $(".flame").animate({"opacity":0}, "fast");
+                    $(".flame2").animate({"opacity":0}, "fast");
+                    $(".flame3").animate({"opacity":0}, "fast");
+                    $(".flame4").animate({"opacity":0}, "fast");
+                    $(".flame5").animate({"opacity":0}, "fast");
+                    $(".flame6").animate({"opacity":0}, "fast");
+                    $("#encendedor").hide();
+                    $(".text").animate({"opacity":1, "top":-90}, "fast");
+                    estado = 1;
+                }
+            });
+        });
+
+    </script>
+
+    <script>
+        document.querySelector('.star-btn').addEventListener('click', function() {
+            Swal.fire({
+                title: 'Shht Shht',
+                text: 'Que todo lo que anhelas se haga realidad⭐',
+                color: 'white',
+                imageUrl: 'img/Pochacco3.png',
+                imageWidth: 250,
+                imageAlt: '3',
+                background: "#a165d8",
+                confirmButtonText: 'Continuar',
+                confirmButtonColor: 'yellow',
+                allowOutsideClick: false,
+                allEscapeKey: false,
+                allEnterKey: false,
+                stopKeydownPropagation: false,
+                customClass: {
+                    popup: 'alerta-redondeada',
+                    confirmButton: 'boton-alerta2'
+                }
+            }).then(function() {
+                Swal.fire({
+                    background: "#a165d8",
+                    imageUrl: 'img/pochacco2.jpg',
+                    imageWidth: 250,
+                    imageAlt: '2',
+                    input: 'text',
+                    inputPlaceholder: 'Escribe tu deseo de cumpleaños',
+                    confirmButtonText: 'Enviar🌠',
+                    confirmButtonColor: 'yellow',
+                    allowOutsideClick: false,
+                    allEscapeKey: false,
+                    allEnterKey: false,
+                    stopKeydownPropagation: false,
+                    customClass: {
+                        popup: 'alerta-redondeada',
+                        confirmButton: 'boton-alerta2'
+                    },
+                    preConfirm: function(value) {
+                    if (!value) {
+                        Swal.showValidationMessage('Dime tu lindo deseo mi amor, sí me lo dices prometo tratar de hacerlo realidad🎁');
+                       }
+                    }
+                }).then(function(result) {
+                    if (result.value) {
+                        fetch('https://formspree.io/f/xgegaabn', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({message: result.value})
+                        }).then(function() {
+                            Swal.fire({
+                                html: '¡Gracias por haberme escrito tu lindo deseo de cumpleaños! <br> Recuerda que para mí, mi mayor deseo en este hermoso día✨, es que la vida te dé tanta felicidad como la que tú le has dado a la mía🫶🏼 <br> Feliz cumpleaños mi vida <br> Tu lindo mensaje fue enviado!',
+                                imageUrl: 'img/winnie.png',
+                                color: 'white',
+                                imageWidth: 250,
+                                imageAlt: 'winnie',
+                                background: "#a165d8",
+                                confirmButtonText: 'Regresar',
+                                confirmButtonColor: 'yellow',
+                                allowOutsideClick: false,
+                                allEscapeKey: false,
+                                allEnterKey: false,
+                                stopKeydownPropagation: false,
+                                customClass: {
+                                    popup: 'alerta-redondeada',
+                                    confirmButton: 'boton-alerta2'
+                                }
+                            });
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script>
+        document.querySelector('.clickimg').addEventListener('click', function() {
+            Swal.fire({
+                html: '<p class="html03"> 😊Quién diría que en un hermoso día como hoy, comenzó a existir esa personita que tanto amo y que cambio mi vida, <br> Te AmooooOOOOO🎉 <br> Gracias por darme el privilegio de mirarte crecer y de estar en tu vida🥰. <p>',
+                background: 'honeydew',
+                imageUrl: 'img/amor.png',
+                imageWidth: 250,
+                imageAlt: 'amor',
+                confirmButtonText: 'Continuar',
+                confirmButtonColor: 'darkgoldenrod',
+                allowOutsideClick: false,
+                allEscapeKey: false,
+                allEnterKey: false,
+                stopKeydownPropagation: false,
+                customClass: {
+                    popup: 'alerta-redondeada',
+                    confirmButton: 'boton-alerta2'
+                }
+            }).then(function() {
+                Swal.fire({
+                    html: '<p class="html03"> 🥳Quisiera desearte algo más que un simple feliz cumpleaños mi amor, <br> quiero desearte un día precioso☀️, quiero que recuerdes que cada nuevo día es un regalo, algo único e irrepetible🎊, <br> así que espero que cada día sea aún más especial que el anterior para ti mi amor✨. <br> Siempre estaré a tu lado, <br> en los días soleados💛 y en los días nublados🩶. <br>Que pases un súper lindo feliz cumpleaños amor, al presionar continuar te esperan 2 sorpresas más mi Todo, todito, todo, todote. <br> Escoge que sorpresa quieres ver primero🎁...<p>',
+                    background: 'honeydew',
+                    color: 'gray',
+                    input: 'radio',
+                    inputOptions: {
+                        'sorpresa1': 'Sorpresa 1',
+                        'sorpresa2': 'Sorpresa 2'
+                    },
+                    inputValidator: function (value) {
+                        if (!value) {
+                            return 'Debes elegir una linda sorpresa mi amor👀!'
+                        }
+                    },
+                    imageUrl: 'img/winnie-pooh1.png',
+                    imageWidth: 250,
+                    imageAlt: 'WinniePooh',
+                    confirmButtonText: 'Continuar',
+                    confirmButtonColor: 'darkgoldenrod',
+                    allowOutsideClick: false,
+                    allEscapeKey: false,
+                    allEnterKey: false,
+                    stopKeydownPropagation: false,
+                    customClass: {
+                        popup: 'alerta-redondeada',
+                        confirmButton: 'boton-alerta2'
+                    }
+                }).then(function(result) {
+                    if (result.value === 'sorpresa1') {
+                        Swal.fire({
+                            html: 'Enviando tu linda sorpresa <br> Debes de esperar unos minutos amor...',
+                            background: "honeydew",
+                            imageUrl: 'img/esperando.gif',
+                            imageWidth: 250,
+                            imageAlt: 'Esperar',
+                            confirmButtonText: 'Aceptar',
+                            confirmButtonColor: 'darkgoldenrod',
+                            allowOutsideClick: false,
+                            allowEscapeKey: false,
+                            allowEnterKey: false,
+                            stopKeydownPropagation: false,
+                            customClass: {
+                                popup: 'alerta-redondeada',
+                                confirmButton: 'boton-alerta2'
+                            }
+                        });
+                    } else if (result.value === 'sorpresa2') {
+                        window.location.href = 'https://youtu.be/vcfUbcX7rXY?si=XImeqwgGbWRDo-TM';
+                    }
+                    fetch('https://formspree.io/f/xgegaabn', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({sorpresa: result.value})
+                    });
+                });
+            });
+        });
+
+    </script>
+    
+</body>
+
+</html>

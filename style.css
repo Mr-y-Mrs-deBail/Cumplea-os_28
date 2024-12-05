@@ -671,8 +671,14 @@ body {
     .text2{
         font-size: 30px;
     }
-    .clickimg{
-        margin-left: -100px;
+    .clicktext{
+        position: relative;
+        margin-left: 0;
         margin-top: -90px;
+        text-align: center;
+    }
+    .clickimg{
+        display: block;
+        margin: 0 70px auto;
     } 
 }

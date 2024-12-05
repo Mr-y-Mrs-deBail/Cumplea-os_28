@@ -62,7 +62,7 @@
     </div>
     <br><br><br><br>
     
-    <p class="clickImg">¡Haz click en nuestro lindo dibujo! <br> ⭣ </p>
+    <p class="clickImg clicktext">¡Haz click en nuestro lindo dibujo! <br> ⭣ </p>
     <img class="clickimg" src="img/click.png" alt="click">
 
     <!-- Código js -->
@@ -102,102 +102,99 @@
             }
         }).then(() => {
             
-        audioElement.play();
-        Swal.fire({html: '<p class="html02"> Mi súper esposo <br> ¡A ver, a ver! ¿Quién está de cumpleaños hoy? <br> ¿Quién será él que cumple añitos hoy? <br> ¿Quién será esa personita súper linda? <br> ¿Quién? <br> ¡Vamos amor, dime quién buuuu! <br> ¡Uyyyyyyy!🎉⭐. <p>',
-        imageUrl: 'img/pochacco.png',
-        imageWidth: 250,
-        imageAlt: 'pochacco',
-        background: "cadetblue",
-        grow: 'fullscreen',
-        confirmButtonText: 'Continuar',
-        confirmButtonColor: 'white',
-        allowOutsideClick: false,
-        allEscapeKey: false,
-        allEnterKey: false,
-        stopKeydownPropagation: false,
-        customClass:{
-            confirmButton: 'boton-alerta1',
-            popup: 'alerta-redondeada'
-        }
-    
-            }).then(() => {
-                Swal.fire({
-                html: '<p class="html02"> ¿Quién cumple añitos hoy amor? <p>',
+            audioElement.play();
+            Swal.fire({html: '<p class="html02"> Mi súper esposo <br> ¡A ver, a ver! ¿Quién está de cumpleaños hoy? <br> ¿Quién será él que cumple añitos hoy? <br> ¿Quién será esa personita súper linda? <br> ¿Quién? <br> ¡Vamos amor, dime quién buuuu! <br> ¡Uyyyyyyy!🎉⭐. <p>',
+                imageUrl: 'img/pochacco.png',
+                imageWidth: 250,
+                imageAlt: 'pochacco',
                 background: "cadetblue",
                 grow: 'fullscreen',
-                input: 'radio',
-                inputOptions: {
-                    'yo': 'Yo',
-                    'no_se': 'No sé'
-                },
+                confirmButtonText: 'Continuar',
                 confirmButtonColor: 'white',
                 allowOutsideClick: false,
                 allEscapeKey: false,
                 allEnterKey: false,
                 stopKeydownPropagation: false,
-                color: 'gray',
-                imageUrl: 'img/pooh-bear.gif',
-                imageWidth: 250,
-                imageAlt: 'bear',
-                customClass: {
+                customClass:{
                     confirmButton: 'boton-alerta1',
                     popup: 'alerta-redondeada'
-                },
-                
-                inputValidator: (value) => {
-                    if (value === 'yo') {
-                        return;
-                    } else {
-                        return 'Buuu, sí lo sabes mi amor, vuelve a intentarlo😊';
-                    }
-                },
-                confirmButtonText: 'Continuar'
+                }
             
-                }).then((result) => {
-                    
-                    if (result.isConfirmed) {
-                    Swal.fire({
-                        html: '<p class="html02"> 🎂Pues si eres tú mi amor, él que cumple añitos hoy Uyyyyy, yo sé que las palabras no pueden sustituir un abrazo, <br> pero sirven para hacerte llegar mis mejores deseos para tu cumpleaños🎉. <br> Te envío un abrazo súper fuerte mi Todo✨. <p>',
-                            imageUrl: 'img/abrazo.png',
-                            imageWidth: 250,
-                            imageAlt: 'abrazo',
-                            background: "cadetblue",
-                            confirmButtonText: 'Continuar',
-                            confirmButtonColor: 'white',
-                            allowOutsideClick: false,
-                            allEscapeKey: false,
-                            allEnterKey: false,
-                            stopKeydownPropagation: false,
-                            customClass: {
-                                confirmButton: 'boton-alerta1',
-                                popup: 'alerta-redondeada'
+            }).then(() => {
+                Swal.fire({
+                    html: '<p class="html02"> ¿Quién cumple añitos hoy amor? <p>',
+                        background: "cadetblue",
+                        grow: 'fullscreen',
+                        input: 'radio',
+                        inputOptions: {
+                            'yo': 'Yo',
+                            'no_se': 'No sé'
+                        },
+                        confirmButtonColor: 'white',
+                        allowOutsideClick: false,
+                        allEscapeKey: false,
+                        allEnterKey: false,
+                        stopKeydownPropagation: false,
+                        color: 'gray',
+                        imageUrl: 'img/pooh-bear.gif',
+                        imageWidth: 250,
+                        imageAlt: 'bear',
+                        customClass: {
+                            confirmButton: 'boton-alerta1',
+                            popup: 'alerta-redondeada'
+                        },
+                        
+                        inputValidator: (value) => {
+                            if (value === 'yo') {
+                                return;
+                            } else {
+                                return 'Buuu, sí lo sabes mi amor, vuelve a intentarlo😊';
                             }
-                        }).then(() => {
+                        },
+                        confirmButtonText: 'Continuar'
+                    }).then((result) => {
+                        
+                        if (result.isConfirmed) {
                             Swal.fire({
-                                html: '<p class="html02">  ¿Uyyy 🥳Listo para ver todas tus lindas sorpresas que he preparado para ti🎊, mi amor? ... <p>',
-                                imageUrl: 'img/pooh.png',
-                                imageWidth: 250,
-                                imageAlt: 'pooh',
-                                background: "cadetblue",                                   
-                                confirmButtonText: 'Sí❤️',
-                                confirmButtonColor: 'white',
-                                allowOutsideClick: false,
-                                allEscapeKey: false,
-                                allEnterKey: false,
-                                stopKeydownPropagation: false,
-                                customClass: {
-                                confirmButton: 'boton-alerta1',
-                                popup: 'alerta-redondeada'
-                            }
-    
+                                html: '<p class="html02"> 🎂Pues si eres tú mi amor, él que cumple añitos hoy Uyyyyy, yo sé que las palabras no pueden sustituir un abrazo, <br> pero sirven para hacerte llegar mis mejores deseos para tu cumpleaños🎉. <br> Te envío un abrazo súper fuerte mi Todo✨. <p>',
+                                    imageUrl: 'img/abrazo.png',
+                                    imageWidth: 250,
+                                    imageAlt: 'abrazo',
+                                    background: "cadetblue",
+                                    confirmButtonText: 'Continuar',
+                                    confirmButtonColor: 'white',
+                                    allowOutsideClick: false,
+                                    allEscapeKey: false,
+                                    allEnterKey: false,
+                                    stopKeydownPropagation: false,
+                                    customClass: {
+                                        confirmButton: 'boton-alerta1',
+                                        popup: 'alerta-redondeada'
+                                    }
+                                }).then(() => {
+                                Swal.fire({
+                                    html: '<p class="html02">  ¿Uyyy 🥳Listo para ver todas tus lindas sorpresas que he preparado para ti🎊, mi amor? ... <p>',
+                                    imageUrl: 'img/pooh.png',
+                                    imageWidth: 250,
+                                    imageAlt: 'pooh',
+                                    background: "cadetblue",                                   
+                                    confirmButtonText: 'Sí❤️',
+                                    confirmButtonColor: 'white',
+                                    allowOutsideClick: false,                                            
+                                    allEscapeKey: false,
+                                    allEnterKey: false,
+                                    stopKeydownPropagation: false,
+                                    customClass: {
+                                    confirmButton: 'boton-alerta1',                           
+                                    popup: 'alerta-redondeada'
+                                }
+                            });
                         });
-                    
-                    });
                 
-                } 
+                    } 
+                });
             });
         });
-      });
     </script>
 
     <script>
